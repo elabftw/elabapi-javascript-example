@@ -27,4 +27,6 @@ cd elabapi-javascript-example
 docker run --rm -v ${PWD}:/usr/share/nginx/html -p 8087:80 -d nginx
 ~~~
 
+Modify the javascript code to point to your server with a valid API Key.
+
 Go to http://localhost:8087 to try it out!
