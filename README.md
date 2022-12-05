@@ -22,6 +22,8 @@ Restart the service (`elabctl restart`).
 Run a local server with:
 
 ~~~bash
+git clone https://github.com/elabftw/elabapi-javascript-example
+cd elabapi-javascript-example
 docker run --rm -v ${PWD}:/usr/share/nginx/html -p 8087:80 -d nginx
 ~~~
 
