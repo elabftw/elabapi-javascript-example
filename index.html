@@ -9,12 +9,12 @@
   </body>
   <script>
     // CHANGE THIS
-    const elabftwServerUrl = 'https://elab.local:3148/api/v2/';
+    const elabftwServerUrl = 'https://elab.local:3148/api/v2';
     const apiKey = 'apiKey4Test';
     // END configuration
     document.getElementById('getExp').addEventListener('click', () => {
       const headers = {'Content-Type': 'application/json', 'Authorization': apiKey};
-      fetch(`${elabftwServerUrl}api/v2/experiments`, { headers, method: 'GET'}).then(res => res.json()).then(json => {
+      fetch(`${elabftwServerUrl}/experiments`, { headers, method: 'GET'}).then(res => res.json()).then(json => {
         document.getElementById('output').innerText = JSON.stringify(json);
       });
     });
